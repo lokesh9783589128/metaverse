@@ -1,0 +1,1264 @@
+@media only screen and (max-width:992px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .burger{
+      opacity: 100%;
+      left: 90vw;
+      top: -12vh;
+      cursor: pointer;
+      
+    }
+    html{
+        scroll-behavior: smooth;
+    
+    }
+    body{
+        background-color: black;
+        cursor: default;
+        
+    }
+    .navbar{
+       width: 100vw;
+       z-index: 1000;
+       flex-direction: column;
+       
+       
+    
+    }
+    .nav-list {
+        position: absolute;
+        flex-direction: column;
+        height: 2vh;
+        width: 2vw;
+        left: 20vw;
+        line-height: 1vh;
+    }
+    .h-list{
+        top: -5000px;
+    }
+    .nav-list li a{
+        opacity: 100%;
+    }
+   .nav-list li {
+    position: relative;
+    background-color: rgb(47, 47, 165);
+    width: 120vw;
+    text-align: center;
+    left: -50vw;
+   }
+   .nav-list li a{
+    position: relative;
+    background-color: rgb(47, 47, 165);
+    width: 120vw;
+    text-align: center;
+    left: 1vw;
+   }
+    .nav-list a::before{
+        display: none;
+    }
+    .nav-list a::after{
+        display: none;
+    }
+    .nav-list a:hover::after{
+        display: none;
+    }
+    .logo{
+        width: 10vw;
+        height: 100px;
+        z-index: 100;
+        
+    }
+    .logo::before{
+        position: absolute;
+        content: '';
+        background:rgb(47, 47, 165);
+        height: 100px;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        overflow: hidden;
+        animation: slide 1s linear forwards;
+        animation-direction: right;
+        animation-delay: .5s;
+        
+    
+    }
+    
+    @keyframes slide{
+       
+        100%{
+            left: 100%;
+            width: 0%;
+        }
+    }
+    
+    .shopping-list{ 
+      display: none;
+        
+    }
+    .sections{
+        
+        position: relative;
+        cursor: default;
+        
+    }
+    .banner1{
+        position: relative;
+        width: 100vw;
+        height: 90vh;
+       
+        /* border: 0.1px solid white; */
+        animation: blink1 2s linear infinite;
+    }
+    @keyframes blink1{
+        50%{
+            opacity: 0;
+        }
+    }
+    .banner2{
+        display: none;
+    }
+  
+    .earth{
+        display: none;
+    }
+    
+    .banner3{
+        display: none;
+        
+    }
+    
+    .stars{
+        display: none;
+    }
+    /* @keyframes blink3{ 
+         50%{
+            opacity: 0;
+        }
+    } */
+    .buy{
+        position:absolute ;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+        top: 22%;
+        font-size: 3vw;
+        left: 70px;
+        width: 100vw;
+        
+    
+    }
+    .blockchain{
+        position: absolute;
+        color: white;
+        font-size: 8vw;
+        left: 70px;
+        top: 30%;
+        width: 100vw;
+        /* height: 20vh; */
+        line-height: 10vh;
+    }
+    .grouth{
+        position: absolute;
+        top: 70%;
+        /* line-height: 20px; */
+        max-width: 80vw;
+        font-size: 2.5vw;
+        left: 70px;
+        width: 100vw;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+    }
+    
+    .button{
+        position: absolute;
+        background: linear-gradient(to left, #f32170 0%,
+        #ff6b08 35%, #cf23cf 70%, #eedd44 100%);
+        width: 40vw;
+        height: 8.5vh;
+        border-radius: 7px;
+        font-size: 20px;
+        color: white;
+        font-weight: bolder;
+        left: 110px;
+        top: 90%;
+        cursor: pointer;
+        opacity: 0%; 
+        animation: opa 1.5s linear forwards;
+        animation-delay: .5s;
+    }
+    
+    .button::before{
+        content: "";
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        background: linear-gradient(to left, rgb(212, 60, 212) 0%, rgb(102, 246, 102) 50%, blue 100%); 
+        transform: scaleX(0);
+        transform-origin: middle;
+        transition: transform .3s ease-out;
+    }
+    .button-font{
+        position: absolute;
+        z-index: 1;
+        top: -.1vh;
+        left: 0;
+        font-size: 2.5vw;
+        padding: 2vh 5vw;
+    }
+    
+    
+    .button:hover::before{
+        transform: scaleX(1); 
+    }
+    .A{
+        /* position: absolute; */
+        opacity: 0%; 
+        animation: opa 2s linear forwards;
+        animation-delay: .5s;
+    }
+    @keyframes opa{
+        70%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+    
+    .section-second{
+        position: relative;
+        cursor: default;
+    }
+    
+    .static{
+        position: relative;
+        top: -450px;
+        width: 99.9%;
+        /* border: .1px solid white; */
+        z-index: -10;
+    }
+    
+    .tables{
+        position: absolute;
+        height: 630px;
+        width: 490px;
+        left: 15vw;
+        top: 50px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.459);
+    
+    }
+    
+    .table1{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 440px;
+        font-size: 20px;
+        color: white;
+        margin: 10px 15px;
+        border-radius: 8px;
+        height: 70px;
+        background-color: #ffffff5c;
+        padding: 10px;
+    }
+    .table2{
+        position: relative;
+        display: flex;
+        font-size: 20px;
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+        width: 440px;
+        height: 40px;
+        margin: 10px 15px;
+        border-radius: 8px;
+        background-color: #00000024;
+        padding: 10px;
+    }
+    .table3{
+        position: relative;
+        display: flex;
+        width: 440px;
+        height: 40px;
+        display: flex;
+        font-size: 20px;
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 15px;
+        border-radius: 8px;
+        background-color: #00000024;
+        padding: 10px;
+    }
+    .table4{
+        position: relative;
+        display: flex;
+        width: 440px;
+        height: 100px;
+        display: flex;
+        font-size: 18px;
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 15px;
+        border-radius: 8px;
+        background-color: #00000024;
+        padding: 10px;
+    }
+    .flag-contaion1{
+        padding: 7px;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 0.39);
+    }
+    .flag-contaion2{
+        padding: 7px;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 0.39);
+    }
+    .flag-contaion3{
+        padding: 7px;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 0.39);
+    }
+    .table5{
+        position: relative;
+        display: flex;
+        width: 440px;
+        height: 100px;
+        display: flex;
+        font-size: 18px;
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 15px;
+        border-radius: 8px;
+        background-color: #00000024;
+        padding: 10px;
+    }
+    
+    .flag-contaions1{
+        padding: 7px;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 0.39);
+    }
+    .flag-contaions2{
+        padding: 7px;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 0.39);
+    }
+    .flag-contaions3{
+        padding: 7px;
+        font-size: 16px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.39);
+    }
+    .table6{
+        position: relative;
+        width: 440px;
+        height: 80px;
+        font-size: 18px;
+        color: white;
+        margin: 10px 15px;
+        border-radius: 8px;
+        background-color: #00000024;
+        padding: 10px;
+    }
+    .dot{
+        position: relative;
+        height: 40px;
+        width: 440px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #777277;
+        
+    }
+    .dots1{
+        position: relative;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: white;
+    
+    }
+    .dots2{
+        position: relative;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: white;
+    
+    }
+    .dots3{
+        position: relative;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: white;
+    
+    }
+    .dots4{
+        position: relative;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: white;
+    
+    }
+    .dots5{
+        position: relative;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: white;
+    
+    }
+    .dots6{
+        position: relative;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: white;
+    
+    }
+    .dots7{
+        position: relative;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: white;
+    
+    }
+    .dots8{
+        position: relative;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: white;
+    
+    }
+    .dots9{
+        position: relative;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: white;
+    
+    }
+    .dots10{
+        position: relative;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: white;
+    
+    }
+    .text{
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+        top: -10px;
+        justify-content: space-evenly;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+        
+    }
+    .astronote{
+        position: absolute;
+        left: 10vw;
+        top: 140vh;
+        z-index: 100;
+        
+        
+    }
+    .statics{
+        position: absolute;
+        top: 130vh;
+        left: 35vw;
+        /* border: .1px solid white; */
+        height: 40%;
+        width: 60vw;
+        max-width: 60vw;
+        z-index: 100; 
+    }
+    .font1{
+        position: absolute;
+        top: 13vh;
+        padding: 10px;
+        font-size: 3vw;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    }
+    .font2{
+        position: absolute;
+        left: 5%;
+        top: 20vh;
+        font-size: 6vw;
+        color: white;
+        text-transform: capitalize;
+    }
+    .font3{
+        position: absolute;
+        left: 5%;
+        top: 40vh;
+        font-size: 2vw;
+        max-width: 80vw;
+        color:white;
+        text-transform: capitalize;
+    
+    
+    }
+    .link{
+        /* position: relative; */
+        text-decoration: none;
+        color: blue;
+        cursor: pointer;
+    }
+    .link:hover{
+        color: red;
+    }
+    .link1{
+        /* position: relative; */
+        text-decoration: none;
+        color: blue;
+        cursor: pointer;
+    }
+    .link1:hover{
+        color: red;
+    }
+    .font4{
+        position: absolute;
+        left: 5%;
+        top: 59vh;
+        font-size: 2vw;
+        text-transform: capitalize;
+        color: white;
+    }
+    .at{
+        position: absolute;
+        background: linear-gradient(to left, #f32170 0%,
+        #ff6b08 35%, #cf23cf 70%, #eedd44 100%);
+        width: 35vw;
+        height: 8vh;
+        left: 80px;
+        top: 70vh;
+        border-radius: 7px;
+        font-size: 20px;
+        color: white;
+        font-weight: bolder;
+        cursor: pointer;
+       
+    }
+    .at::before{
+        content: "";
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        background: linear-gradient(to left, rgb(212, 60, 212) 0%, rgb(102, 246, 102) 50%, blue 100%); 
+        transform: scaleX(0);
+        transform-origin: middle;
+        transition: transform .3s ease-out;
+        
+    }
+    .at-font{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        font-size: 2.5vw;
+        padding: 1.5vh 4vw;
+    }
+    
+    
+    .at:hover::before{
+        transform: scaleX(1); 
+    }
+    .section-third{
+        position: absolute;
+        height: 50vh;
+        width: 100%;
+        top: 1800px;
+        cursor: default;
+        /* top: 90vh; */
+        z-index: 100;
+        
+    }
+    .video{
+        position: absolute;
+        background-image: url(video-bg.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100vw;
+        opacity: 50%;
+        
+        
+    }
+    .video-rep{
+        position: absolute;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-size: 2vw;
+        left: 10vw;
+        top: 10vh;
+    }
+    .video-text{
+        position: absolute;
+        color: white;
+        font-size: 6vw;
+        top: 17vh;
+        left: 10vw;
+    }
+    .star-rotate{
+        position: absolute;
+        animation: star-blink 1s linear infinite;
+        left: 60vw;
+        top: 30vh;
+    }
+    @keyframes star-blink{
+        50%{
+            opacity: 0%;
+        }
+    }
+    .section-fourth{
+        position: absolute;
+        top: 2200px;
+        cursor: default;
+        width: 100vw;
+        z-index: 100;
+        left: 10vw;
+        flex-wrap: wrap;
+    }
+    .key{
+        position: absolute;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        z-index: 5;
+        left: 30px;
+        top: -110px;
+        font-size: 3.5vw;
+        height: 40px;
+        width: 200px;
+    }
+    .access{
+        position: absolute;
+        left: 10px;
+        z-index: 5;
+        top: -80px;
+        color: white;
+        font-size: 50px;
+        height: 40px;
+        width: 500px;
+    
+    }
+    .icon1-tables{
+        position: absolute;
+        height: 350px;
+        width: 300px;
+        border-radius: 30px;
+        background-color: #777277;
+        padding:30px;
+        margin: 20px;
+        cursor: pointer;
+    
+    }
+    .icon1-tables::after{
+        position: absolute;
+        content: "";
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 30px;
+        background-color:#3f3c3f;
+        transform: scaleX(0);
+        transform-origin: middle;
+        transition: transform .3s ease-out;
+    
+    
+    }
+    .icon1-tables:hover::after{
+       transform: scaleX(1);
+    }
+    .icon1{
+        position: relative;
+        z-index: 2;
+    }
+    .icon1-text1{
+        position: relative;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-size: 30px;
+        padding: 20px 0px;
+        z-index: 2;
+        
+    }
+    .icon1-text2{
+        position: relative;
+        color: white;
+        padding: 20px 0px;
+        font-size: 20px;
+        text-transform: capitalize;
+        z-index: 2;
+    }
+    .icon1-text3{
+        position: relative;
+        padding-top: 30px;
+        font-size: 16px;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        z-index: 2;
+    }
+    
+    
+    
+    
+    
+    .icon2-tables{
+        position: absolute;
+        height: 350px;
+        width: 300px;
+        border-radius: 30px;
+        background-color: #777277;
+        padding:30px;
+        margin: 20px;
+        top: 450px;
+        left: 0px;
+        cursor: pointer;
+    
+    }
+    .icon2-text1{
+        position: relative;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-size: 30px;
+        padding: 20px 0px;
+        z-index: 2;
+        
+    }
+    .icon2-text2{
+        position: relative;
+        color: white;
+        padding: 20px 0px;
+        font-size: 20px;
+        text-transform: capitalize;
+        z-index: 2;
+    }
+    .icon2-text3{
+        position: relative;
+        font-size: 16px;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        z-index: 2;
+    }
+    
+    .icon3-tables{
+        position: absolute;
+        height: 350px;
+        width: 300px;
+        border-radius: 30px;
+        background-color: #777277;
+        padding:30px;
+        margin: 20px;
+        top: 900px;
+        left: 0px;
+        cursor: pointer;
+    
+    }
+    .icon3-text1{
+        position: relative;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-size: 30px;
+        padding: 20px 0px;
+        z-index: 2;
+    }
+    .icon3-text2{
+        position: relative;
+        color: white;
+        padding: 20px 0px;
+        text-transform: capitalize;
+        font-size: 20px;
+        z-index: 2;
+    }
+    .icon3-text3{
+        position: relative;
+        padding-top: 30px;
+        font-size: 16px;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        z-index: 2;
+    }
+    
+    .icon4-tables{
+        position: absolute;
+        height: 350px;
+        width: 300px;
+        border-radius: 30px;
+        background-color: #777277;
+        padding:30px;
+        margin: 20px;
+        top: 1350px;
+        left: 0px;
+        
+        cursor: pointer;
+    
+    }
+    .icon4-text1{
+        position: relative;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-size: 30px;
+        padding: 20px 0px;
+        z-index: 2;
+        
+    }
+    .icon4-text2{
+        position: relative;
+        color: white;
+        padding: 20px 0px;
+        font-size: 20px;
+        text-transform: capitalize;
+        z-index: 2;
+    }
+    .icon4-text3{
+        position: relative;
+        padding-top: 30px;
+        font-size: 16px;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        z-index: 2;}
+    
+    .icon5-tables{
+        position: absolute;
+        height: 350px;
+        width: 300px;
+        border-radius: 30px;
+        background-color: #777277;
+        padding:30px;
+        margin: 20px;
+        top: 1800px;
+        left: 0px;
+        cursor: pointer;
+    
+    }
+    .icon5-text1{
+        position: relative;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-size: 30px;
+        padding: 20px 0px;
+        z-index: 2;
+        
+    }
+    .icon5-text2{
+        position: relative;
+        color: white;
+        padding: 20px 0px;
+        font-size: 20px;
+        text-transform: capitalize;
+        z-index: 2;
+    }
+    .icon5-text3{
+        position: relative;
+        font-size: 16px;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        z-index: 2;
+    }
+    
+    .icon6-tables{
+        position: absolute;
+        height: 350px;
+        width: 300px;
+        border-radius: 30px;
+        background-color: #777277;
+        padding:30px;
+        margin: 20px;
+        top: 2250px;
+        left: 0px;
+        cursor: pointer;
+    
+    }
+    .icon6-text1{
+        position: relative;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-size: 30px;
+        padding: 20px 0px;
+        z-index: 2;
+        
+    }
+    .icon6-text2{
+        position: relative;
+        color: white;
+        padding: 20px 0px;
+        font-size: 20px;
+        text-transform: capitalize;
+        z-index: 2;
+    }
+    .icon6-text3{
+        position: relative;
+        font-size: 16px;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        z-index: 2;
+    }
+    .icon2-tables::after{
+        position: absolute;
+        content: "";
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 30px;
+        background-color:#3f3c3f;
+        transform: scaleX(0);
+        transform-origin: middle;
+        transition: transform .3s ease-out;
+    
+    
+    }
+    .icon2-tables:hover::after{
+       transform: scaleX(1);
+    }
+    .icon2{
+        position: relative;
+        z-index: 2;
+    }
+    .icon3-tables::after{
+        position: absolute;
+        content: "";
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 30px;
+        background-color:#3f3c3f;
+        transform: scaleX(0);
+        transform-origin: middle;
+        transition: transform .3s ease-out;
+    
+    
+    }
+    .icon3-tables:hover::after{
+       transform: scaleX(1);
+    }
+    .icon3{
+        position: relative;
+        z-index: 2;
+    }
+    .icon4-tables::after{
+        position: absolute;
+        content: "";
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 30px;
+        background-color:#3f3c3f;
+        transform: scaleX(0);
+        transform-origin: middle;
+        transition: transform .3s ease-out;
+    
+    
+    }
+    .icon4-tables:hover::after{
+       transform: scaleX(1);
+    }
+    .icon4{
+        position: relative;
+        z-index: 2;
+    }
+    .icon5-tables::after{
+        position: absolute;
+        content: "";
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 30px;
+        background-color:#3f3c3f;
+        transform: scaleX(0);
+        transform-origin: middle;
+        transition: transform .3s ease-out;
+    
+    
+    }
+    .icon5-tables:hover::after{
+       transform: scaleX(1);
+    }
+    .icon5{
+        position: relative;
+        z-index: 2;
+    }
+    .icon6-tables::after{
+        position: absolute;
+        content: "";
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 30px;
+        background-color:#3f3c3f;
+        transform: scaleX(0);
+        transform-origin: middle;
+        transition: transform .3s ease-out;
+    
+    
+    }
+    .icon6-tables:hover::after{
+       transform: scaleX(1);
+    }
+    .icon6{
+        position: relative;
+        z-index: 2;
+    }
+    .for-blog{
+        position: absolute;
+        top: 4950px;
+        background-color: #3f3c3f;
+        display: flex;
+        cursor: default;
+        width: 100%;
+        height: 700px;
+        /* padding: 20vh 0; */
+    }
+    .blog-img{
+        position: relative;
+        height: 460px;
+        width: 35%;
+        top: 20vh;
+        left: 70px;
+     
+    }
+    .blog-contaion{
+        position: relative;
+        left: 100px;
+        top: 100px;
+        width: 100vw;
+     
+        max-width: 40vw;
+    }
+    .blog-text1{
+        position: absolute;
+        font-size: 2.5vw;
+        background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .blog-text2{
+        position: absolute;
+        font-size: 5vw;
+        top: 5vh;
+        color: white;
+        font-weight: bolder;
+    }
+    .blog-text3{
+        position: absolute;
+        font-size: 2.5vw;
+        top: 37vh;
+        text-transform: capitalize;
+        color: rgb(190, 186, 186);
+        
+    }
+    .blog-text4{
+        position: relative;
+        text-decoration: underline #3f3c3f;
+        color: rgb(190, 186, 186);
+        font-size: 2.5vw;
+        top: 71vh;
+        /* max-width: 50vw; */
+        text-transform: capitalize;
+    
+    }
+    .blog-icons{
+        position: relative;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 200px;
+        top: 77vh;
+        cursor: pointer;
+        left: 0;
+        display: flex;
+        
+    }
+    
+    .facebook{
+        position: relative;
+        background-color: #3f3c3f;
+        height: 30px;
+        width: 30px;
+        padding: 10px 15px;
+        /* border-radius: 50%; */
+    }
+    .facebook:hover{
+        background-color: aliceblue;
+    }
+    
+    .twitter{
+        position: relative;
+        background-color: #3f3c3f;
+        height: 50px;
+        width: 30px;
+        /* border-radius: 50%; */
+        padding: 0px 10px;
+    }
+    .twitter:hover{
+        background-color: aliceblue;
+    }
+    
+    .youtube{
+        position: relative;
+        background-color: #3f3c3f;
+        height: 50px;
+        width: 30px;
+        /* border-radius: 50%; */
+        padding: 0px 10px;
+    }
+    .youtube:hover{
+        background-color: aliceblue;
+    }
+    
+    .linkdin{
+        position: relative;
+        background-color: #3f3c3f;
+        height: 50px;
+        width: 30px;
+        padding: 0px 10px;
+        /* border-radius: 50%; */
+    }
+    .linkdin:hover{
+        background-color: aliceblue;
+    }
+    
+    .instagram{
+        position: relative;
+        background-color: #3f3c3f;
+        height: 50px;
+        width: 30px;
+        /* border-radius: 50%; */
+        padding: 0px 10px;
+    }
+    .instagram:hover{
+        background-color: aliceblue;
+    }
+    .contact-us{
+        position: absolute;
+        top: 5700px;
+        /* background-color:rgba(130, 130, 138, 0.47); */
+        cursor: default;
+        width: 100vw;
+        /* height: 30vh; */
+    }
+    .footer-img{
+        position: relative;
+        width: 30%;
+        height: 30%;
+        left: 40vw;
+    }
+    .footer-flex {
+        position: absolute;
+        top: -7vh;
+        align-items: center;
+        width: 85vw;
+        justify-content: space-evenly;
+        text-decoration: none;
+        display: flex;
+        left: 5vw;
+        font-size: 4vw;
+        cursor: pointer;
+        color: white;
+    }
+    
+    .footer-flex a::after{
+        position: absolute;
+        content: "";
+        display: block;
+        height: 4px;
+        width: 18%;
+        background:linear-gradient(to left, red 0%, black 100%);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform .3s ease-out;
+    }
+    
+    .footer-flex a:hover::after{
+        transform: scaleX(1);
+    }
+    
+    
+    .footer-logo{
+        position: absolute;
+        cursor: pointer;
+        font-size: 5vw;
+        top:9vh;
+        text-shadow:4px 4px 10px  white;
+        left: 50.2vw;
+        color: white;
+    
+    }
+    .overflow{
+        position: relative;
+        overflow: hidden;
+        height: 1070vh;
+    }
+}
